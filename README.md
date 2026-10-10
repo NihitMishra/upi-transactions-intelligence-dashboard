@@ -2,11 +2,7 @@
 
 ## Project Overview
 
-An interactive Power BI dashboard designed to analyze UPI transaction performance, customer behaviour, payment failures, and fraud indicators. This project explores transaction volume and value, customer demographics, merchant categories, time-based trends, geographic distribution, and risk patterns to derive actionable business insights.
-
-## Dashboard Preview
-
-![UPI Transactions Intelligence Dashboard](Screenshot%202026-10-10%20174335.png)
+An interactive Power BI dashboard designed to analyze UPI transaction performance, customer behaviour, payment failures, and fraud indicators. The project explores transaction volume and value, customer demographics, merchant categories, time-based trends, geographic distribution, and risk patterns to derive actionable business insights.
 
 ## Tools & Technologies
 
@@ -24,6 +20,20 @@ An interactive Power BI dashboard designed to analyze UPI transaction performanc
 - Compare transaction activity across merchant categories and states.
 - Explore fraud indicators by device, network, receiver bank, and transaction hour.
 - Translate dashboard findings into practical business recommendations.
+
+## Dashboard Previews
+
+### Dashboard 1 — Executive Overview
+
+![UPI Dashboard - Executive Overview](./Screenshot%202026-10-10%20174335.png)
+
+### Dashboard 2 — Transaction Intelligence
+
+![UPI Dashboard - Transaction Intelligence](./Screenshot%202026-10-10%20174931.png)
+
+### Dashboard 3 — Fraud and Risk Analysis
+
+![UPI Dashboard - Fraud and Risk Analysis](./Screenshot%202026-10-10%20174948.png)
 
 ## 1. Executive Overview — Key Insights
 
@@ -48,27 +58,32 @@ An interactive Power BI dashboard designed to analyze UPI transaction performanc
 ## 2. Customer and Transaction Behaviour
 
 ### Customer Demographics
+
 - The 26–35 age group leads with approximately 87K transactions.
 - The 36–45 age group contributes approximately 63K transactions.
 - The 18–25 age group contributes approximately 62K transactions.
 
 ### Weekday vs. Weekend
+
 - Weekdays account for approximately 179K transactions.
 - Weekends account for approximately 71K transactions.
 - Weekday transaction volume is approximately 2.5 times weekend volume.
 
 ### Time of Day
-Transaction activity increases during the day and peaks around 19:00–20:00 in the displayed analysis.
+
+Transaction activity peaks around 19:00–20:00 in the displayed analysis.
 
 **Business implication:** Peak-hour patterns can help guide payment-system monitoring and customer-support planning.
 
 ### Device and Network
+
 - Android has the highest displayed transaction volume among Android, iOS, and Web.
-- The network breakdown shows 4G as a major contributor to Android transaction volume.
+- The network breakdown shows 4G as a major contributor to transaction volume.
 
 These are transaction counts, not device or network reliability rates.
 
 ### Geographic and Merchant Insights
+
 - Maharashtra leads with approximately 37K transactions.
 - Uttar Pradesh and Karnataka follow with approximately 30K transactions each.
 - Grocery, Food, and Shopping account for the largest displayed merchant-category volumes.
@@ -78,26 +93,31 @@ These are transaction counts, not device or network reliability rates.
 ## 3. Fraud and Risk Analysis
 
 ### Device-Level Fraud
+
 The dashboard shows approximately 364 flagged fraud transactions on Android, representing about 75.8% of the 480 displayed fraud cases.
 
-**Recommendation:** Investigate the flagged transactions and compare fraud rates against total transaction volumes by device before concluding that Android has a higher fraud risk.
+**Recommendation:** Investigate flagged transactions and compare fraud rates against total transaction volumes by device before concluding that Android has a higher fraud risk.
 
 ### Network-Level Fraud
+
 4G has the highest displayed fraud count among the network categories.
 
 **Recommendation:** Compare fraud rates within each network type. Higher raw counts may reflect greater network usage rather than greater risk.
 
 ### Merchant Category and Failed Transactions
+
 Grocery has the highest displayed failed-transaction count at approximately 2,500, followed by Food at around 1,900 and Shopping at around 1,500.
 
 **Recommendation:** Investigate payment failure reasons by merchant category. Failed transactions should not be treated as fraudulent transactions unless separately identified as fraud.
 
 ### Receiver Bank
+
 SBI has the highest displayed fraud count by receiver bank, followed by HDFC and ICICI.
 
 **Recommendation:** Compare bank-level fraud rates using total transaction volumes for each bank before drawing risk conclusions.
 
 ### Fraud by Time of Day
+
 The displayed hourly fraud count peaks around 19:00–20:00.
 
 **Recommendation:** Compare hourly fraud rates against overall transaction volume by hour to determine whether this peak represents higher fraud risk or simply higher payment activity.
@@ -109,12 +129,12 @@ The displayed hourly fraud count peaks around 19:00–20:00.
 3. **Strengthen fraud analysis:** Compare fraud rates by device, network, bank, and merchant category rather than relying only on raw counts.
 4. **Explore customer segments:** Use demographic and weekday/weekend patterns to understand transaction behaviour.
 5. **Investigate regional performance:** Study transaction value, success rates, and fraud rates across high-volume states.
-6. **Validate key metrics:** Reconcile the fraud-related KPIs with underlying transaction records before making operational decisions.
+6. **Validate key metrics:** Reconcile fraud-related KPIs with underlying transaction records before making operational decisions.
 
 ## 5. Data Validation and Limitations
 
-- The dashboard reports approximately 250K transactions; verify the exact underlying transaction count.
-- Validate the total transaction value and average transaction value against the source data.
+- Verify the exact underlying transaction count behind the approximately 250K figure.
+- Validate total transaction value and average transaction value against the source data.
 - Reconcile the reported fraud count, fraud value, and fraud-rate KPI, as a discrepancy has been noted.
 - Confirm whether failed transactions overlap with fraud cases.
 - Compare fraud counts with total transaction volumes within each segment.
@@ -127,7 +147,7 @@ The UPI Transactions Intelligence Dashboard provides a consolidated view of paym
 ## Project Files
 
 - `UPI_Dashboard_final.pbix` — Interactive Power BI dashboard.
-- Dashboard screenshots — Visual previews of the report.
+- Dashboard screenshots — Visual previews of all three report pages.
 
 ## Author
 
